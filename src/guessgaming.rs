@@ -20,7 +20,7 @@ pub fn main() {
             "quit" => break,
             "leave" => break,
             "help" => {
-                println!("wow u know things... but here is no help there yet my bro");
+                println!("wow u know things... but here is no help yet my bro");
                 continue;
             }
             _ => match guess.trim().parse() {
