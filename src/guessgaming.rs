@@ -19,6 +19,10 @@ pub fn main() {
         let guess: u32 = match guess.trim() {
             "quit" => break,
             "leave" => break,
+            "help" => {
+                println!("wow u know things... but there is no help there yet my bro");
+                continue;
+            }
             _ => match guess.trim().parse() {
                 Ok(num) => num,
                 Err(_) => {
