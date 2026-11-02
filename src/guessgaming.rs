@@ -18,6 +18,7 @@ pub fn main() {
         // and 'quit' leaves wow
         let guess: u32 = match guess.trim() {
             "quit" => break,
+            "leave" => break,
             _ => match guess.trim().parse() {
                 Ok(num) => num,
                 Err(_) => {
